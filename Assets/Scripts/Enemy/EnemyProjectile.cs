@@ -85,13 +85,13 @@ public class EnemyProjectile : MonoBehaviour
         {
             anim.SetTrigger("Shoot");
             anim.SetBool("IsWalking", false);
-            ShootProjectile();
+            //ShootProjectile();
             fireTimer = 0f;
         }
     }
 
     //  SHOOT PROJECTILE 
-    private void ShootProjectile()
+    public void ShootProjectile()
     {
         float directionX = Mathf.Sign(player.position.x - transform.position.x);
 
