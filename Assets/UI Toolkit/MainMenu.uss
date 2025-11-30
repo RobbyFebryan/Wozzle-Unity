@@ -1,0 +1,113 @@
+:root {
+}
+
+.ButtonMainMenu {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: 300px;
+    min-height: 100px;
+    width: auto;
+    font-size: 35px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(192, 129, 92);
+    color: rgb(255, 255, 255);
+    top: 300px;
+    left: 50px;
+}
+
+.SoundSlider {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -unity-font-style: bold;
+    font-size: 25px;
+}
+
+.ButtonMainMenu:hover {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: 300px;
+    min-height: 100px;
+    width: auto;
+    font-size: 35px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(192, 129, 92);
+    color: rgb(255, 255, 255);
+    top: 300px;
+    left: 50px;
+    scale: 1.1 1.1;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.ButtonMainMenu:active {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: 300px;
+    min-height: 100px;
+    width: auto;
+    font-size: 35px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(255, 111, 0);
+    color: rgb(255, 255, 255);
+    top: 300px;
+    left: 50px;
+    scale: 1.1 1.1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.1s;
+}
+
+.SettingsDefault {
+    flex-grow: 1;
+    position: absolute;
+    height: 1084px;
+    width: 1924px;
+    display: none;
+}
+
+.SettingsDown {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    translate: 0 1095px;
+    opacity: 0;
+}

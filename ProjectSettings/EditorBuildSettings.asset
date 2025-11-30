@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9f30ce3ab5c3dae4b80c9bd096df5864
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 1/CutsceneAwal.unity
+    guid: cddf5de2044ea2c41aa97cde84cbcc3b
+  - enabled: 1
+    path: Assets/Scenes/LevelPantai.unity
+    guid: 75d7d501419f81943813c780546fed45
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 1/CutsceneLevel2.unity
+    guid: 29af7efb00bfc26439fef829d78aae8f
+  - enabled: 1
+    path: Assets/Scenes/LevelHutan.unity
+    guid: cbb8df012ca557548ab2e91482419fc6
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 1/CutsceneLevel3.unity
+    guid: 113fd5a69565ae841b6b73a90119a351
+  - enabled: 1
+    path: Assets/Scenes/LevelLava.unity
+    guid: 635a95d9c89b7e244a2df65d4378db87
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 1/CutsceneAkhir.unity
+    guid: 444a181a8c446b94da7f68c28860d166
+  m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0

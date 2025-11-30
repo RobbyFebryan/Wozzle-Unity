@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenu.uss?fileID=7433441132597879392&amp;guid=da997910c50d7384e83ed9d08ab66c28&amp;type=3#MainMenu" />
+    <ui:VisualElement name="MainMenu" style="flex-grow: 1; flex-direction: column; align-self: flex-start; align-content: auto; justify-content: center; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; display: flex;">
+        <ui:Button text="Play" name="PlayButton" class="ButtonMainMenu" style="color: rgb(255, 255, 255);" />
+        <ui:Button text="Settings" name="SettingsButton" class="ButtonMainMenu" />
+        <ui:Button text="Exit&#10;" name="ExitButton" class="ButtonMainMenu" />
+    </ui:VisualElement>
+    <ui:VisualElement name="SettingsParent" class="SettingsDefault SettingsDown" style="display: flex; transition-timing-function: ease-in-out; transition-duration: 0.5s;">
+        <ui:VisualElement name="SettingsBackground" style="flex-grow: 1; background-color: rgb(192, 129, 92); max-height: 794px; max-width: 1000px; align-self: auto; justify-content: flex-start; align-content: auto; margin-left: 460px; margin-right: 460px; width: 1220px; margin-top: 140px; margin-bottom: 140px; display: flex;">
+            <ui:Button text="X" name="CloseSettingsButton" style="align-self: flex-start; background-color: rgb(171, 0, 0); width: auto; min-width: 50px; min-height: 50px; margin-top: 20px; margin-left: 20px; position: absolute; -unity-font-style: bold; font-size: 20px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;" />
+            <ui:Label text="SETTINGS" name="SettingsText" style="font-size: 60px; -unity-font-style: bold; align-self: center; margin-top: 50px; margin-bottom: 50px; position: relative;" />
+            <ui:Slider label="MUSIC" value="42" high-value="100" name="Music" class="SoundSlider" />
+            <ui:Slider label="SFX" value="42" high-value="100" name="SFX" class="SoundSlider" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
