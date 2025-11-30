@@ -2092,7 +2092,7 @@ Transform:
   m_GameObject: {fileID: 174635571}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 54.682995, y: -0.8200002, z: 3.32}
+  m_LocalPosition: {x: 54.682995, y: 0.96000004, z: 3.32}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4957,8 +4957,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00000000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
-  m_sharedMaterial: {fileID: 6096214748087547198, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
+  m_sharedMaterial: {fileID: 6096214748087547198, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
   m_fontSharedMaterials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
@@ -6806,7 +6806,7 @@ Transform:
   m_GameObject: {fileID: 613426452}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 56.579, y: -0.8200002, z: 3.32}
+  m_LocalPosition: {x: 56.579, y: 0.96000004, z: 3.32}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7063,16 +7063,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: SCORE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
-  m_sharedMaterial: {fileID: 6096214748087547198, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
+  m_sharedMaterial: {fileID: 6096214748087547198, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
   m_fontSharedMaterials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294965773
+  m_fontColor: {r: 0.051886797, g: 0.9802118, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10003,7 +10003,7 @@ Transform:
   m_GameObject: {fileID: 945587091}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 58.462, y: -0.8200002, z: 3.32}
+  m_LocalPosition: {x: 58.462, y: 0.96, z: 3.32}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14537,6 +14537,7 @@ GameObject:
   - component: {fileID: 1465155553}
   - component: {fileID: 1465155555}
   - component: {fileID: 1465155554}
+  - component: {fileID: 1465155556}
   m_Layer: 0
   m_Name: RawImage
   m_TagString: Untagged
@@ -14598,6 +14599,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465155552}
   m_CullTransparentMesh: 1
+--- !u!114 &1465155556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465155552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1480825267
 GameObject:
   m_ObjectHideFlags: 0
@@ -17714,8 +17730,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1 / 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
-  m_sharedMaterial: {fileID: 6096214748087547198, guid: 62a2b678cd140994c8276db793aa7e2a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
+  m_sharedMaterial: {fileID: 6096214748087547198, guid: 358afe075a8f43d41aa6aa458198aaf8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19249,7 +19265,7 @@ Transform:
   m_GameObject: {fileID: 2004762256}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 52.8, y: -0.82, z: 3.32}
+  m_LocalPosition: {x: 52.8, y: 0.9600002, z: 3.32}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
