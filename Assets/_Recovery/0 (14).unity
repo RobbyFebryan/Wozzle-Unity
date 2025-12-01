@@ -2792,7 +2792,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StylizedMainMenu
   backgroundPanel: {fileID: 1726670413}
-  titleText: {fileID: 72050103}
   playButton: {fileID: 2139801806}
   optionsButton: {fileID: 1616689562}
   creditsButton: {fileID: 316167821}

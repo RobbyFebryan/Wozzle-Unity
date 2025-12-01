@@ -4160,8 +4160,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverMenu
   gameOverPanel: {fileID: 1303911789}
+  gameOverContent: {fileID: 0}
   restartButton: {fileID: 1087302612}
   homeButton: {fileID: 1822813808}
+  fadeDuration: 0.5
+  hoverScale: 1.15
+  clickScale: 0.9
+  hoverDuration: 0.2
 --- !u!1 &1137223011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5308,7 +5313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5da93a9b618f0408bedd5959551654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  FinishUI: {fileID: 0}
+  PrisonTrigger: {fileID: 0}
   scoreText: {fileID: 428431583}
   keyText: {fileID: 0}
 --- !u!1 &1423821840
@@ -7449,8 +7454,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverMenu
   gameOverPanel: {fileID: 1303911789}
+  gameOverContent: {fileID: 0}
   restartButton: {fileID: 1087302612}
   homeButton: {fileID: 1822813808}
+  fadeDuration: 0.5
+  hoverScale: 1.15
+  clickScale: 0.9
+  hoverDuration: 0.2
 --- !u!4 &1924019426
 Transform:
   m_ObjectHideFlags: 0
@@ -15937,6 +15947,9 @@ MonoBehaviour:
   - {fileID: 588366174}
   - {fileID: 898551623}
   gameOverPanel: {fileID: 1303911787}
+  blinkObjects: []
+  blinkInterval: 0.15
+  sfxIndex: 1
 --- !u!114 &9008390117298974900
 MonoBehaviour:
   m_ObjectHideFlags: 0

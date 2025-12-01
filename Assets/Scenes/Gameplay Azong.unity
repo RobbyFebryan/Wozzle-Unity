@@ -893,7 +893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &204825919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,7 +2224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &514104048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,7 +2789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &588366170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &638607621
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,6 +3199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnObstacle
   obstaclePrefabs: {fileID: 8943813057141557062, guid: b84b05d93315f29478dbf9a4c5d37c54, type: 3}
   spawnTime: 10
+  lifeTime: 5
 --- !u!4 &684619373
 Transform:
   m_ObjectHideFlags: 0
@@ -3379,7 +3384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &820887869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,7 +3682,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &922233559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,7 +3789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &964500070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,7 +4701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1128586863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,8 +4748,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverMenu
   gameOverPanel: {fileID: 1303911789}
+  gameOverContent: {fileID: 0}
   restartButton: {fileID: 1087302612}
   homeButton: {fileID: 1822813808}
+  fadeDuration: 0.5
+  hoverScale: 1.15
+  clickScale: 0.9
+  hoverDuration: 0.2
 --- !u!1 &1137223011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,7 +5190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1245057583
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,7 +5851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5da93a9b618f0408bedd5959551654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  FinishUI: {fileID: 0}
+  PrisonTrigger: {fileID: 0}
   scoreText: {fileID: 428431583}
   keyText: {fileID: 0}
 --- !u!65 &1415820713
@@ -5872,7 +5887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1423821840
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,7 +5997,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1449357321
 GameObject:
   m_ObjectHideFlags: 3
@@ -6094,7 +6111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1483378139
 GameObject:
   m_ObjectHideFlags: 3
@@ -6484,7 +6502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1532571187
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,7 +7225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!65 &1776682622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7261,7 +7281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1806245925
 GameObject:
   m_ObjectHideFlags: 0
@@ -7619,7 +7640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &1871333854
 GameObject:
   m_ObjectHideFlags: 0
@@ -8169,7 +8191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &2020236334
 GameObject:
   m_ObjectHideFlags: 0
@@ -8411,7 +8434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c50e83795d3174db1227b2b103ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformManager
-  lifeTime: 2
+  hideDelay: 2
+  reappearDelay: 3
 --- !u!1 &2052644152
 GameObject:
   m_ObjectHideFlags: 0
@@ -33646,6 +33670,9 @@ MonoBehaviour:
   - {fileID: 588366174}
   - {fileID: 898551623}
   gameOverPanel: {fileID: 1303911787}
+  blinkObjects: []
+  blinkInterval: 0.15
+  sfxIndex: 1
 --- !u!114 &9008390117298974900
 MonoBehaviour:
   m_ObjectHideFlags: 0

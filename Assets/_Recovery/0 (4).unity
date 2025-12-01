@@ -2002,7 +2002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5da93a9b618f0408bedd5959551654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  FinishUI: {fileID: 0}
+  PrisonTrigger: {fileID: 0}
   scoreText: {fileID: 0}
   keyText: {fileID: 0}
 --- !u!1 &1524366091
