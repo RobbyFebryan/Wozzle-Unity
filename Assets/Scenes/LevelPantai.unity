@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 76556762}
   - component: {fileID: 76556760}
   - component: {fileID: 76556765}
+  - component: {fileID: 76556766}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -825,7 +826,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76556759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 243bcc3c84054b444a84c406b919146f, type: 3}
   m_Name: 
@@ -836,6 +837,26 @@ MonoBehaviour:
   smoothFollow: 0
   minY: 11.11
   maxY: 100
+--- !u!114 &76556766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76556759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0020a597eb08b414f9b3f6ceb860203c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Camera3rdPerson
+  APRRoot: {fileID: 1881434256}
+  distance: 10
+  smoothness: 0.15
+  rotateCamera: 1
+  rotateSpeed: 5
+  minAngle: -45
+  maxAngle: -10
+  isStandby: 0
 --- !u!1 &76870861
 GameObject:
   m_ObjectHideFlags: 0
