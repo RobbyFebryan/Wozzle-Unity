@@ -1,0 +1,16 @@
+LEVEL 1 – Dunia Tanpa Warna
+
+Tujuan
+Memperkenalkan kontrol dasar dan memahami misi awal Wozzle dalam memulihkan warna dunia.
+
+Tantangan
+Pemain perlu menggeser beberapa blok sederhana yang menghalangi jalur menuju kristal pertama.
+
+Mekanik
+Interaksi dasar seperti menggeser objek, mengaktifkan item, dan bergerak menuju titik tujuan.
+
+Kemenangan
+Ketika kristal disentuh, cahaya terpancar dan sebagian area kembali berwarna.
+
+Transisi Cerita
+Wozzle mengetahui bahwa Prism Core pecah sehingga ia harus mengaktifkan kristal-kristal untuk memulihkan dunia.
