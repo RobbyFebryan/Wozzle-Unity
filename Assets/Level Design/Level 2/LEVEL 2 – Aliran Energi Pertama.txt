@@ -1,0 +1,16 @@
+LEVEL 2 – Aliran Energi Pertama
+
+Tujuan
+Memperkenalkan mekanik panel arah yang harus disusun agar energi dapat mengalir.
+
+Tantangan
+Pemain harus memutar dua panel arah agar aliran energi mengarah tepat ke kristal di ujung ruangan.
+
+Mekanik
+Rotasi panel, pengaturan jalur energi, dan pengamatan pola.
+
+Kemenangan
+Aliran energi menyala penuh dan mengaktifkan kristal, menciptakan jembatan menuju area selanjutnya.
+
+Transisi Cerita
+Wozzle melanjutkan perjalanan memasuki area yang lebih dalam dan lebih gelap.

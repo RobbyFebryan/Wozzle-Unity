@@ -1,0 +1,16 @@
+LEVEL 3 – Rintangan Bergerak
+
+Tujuan
+Melatih pemain mengatur waktu (timing) dalam penyelesaian puzzle.
+
+Tantangan
+Blok-blok bergerak naik-turun atau melintang sehingga pemain harus menunggu momen yang tepat agar jalur energi atau Wozzle bisa melewati penghalang dengan aman.
+
+Mekanik
+Timing puzzle, observasi ritme pergerakan rintangan, serta sinkronisasi energi.
+
+Kemenangan
+Ketika kristal aktif, bunga warna pertama tumbuh sebagai tanda bahwa area tersebut mulai hidup kembali.
+
+Transisi Cerita
+Wozzle mulai memahami bahwa setiap kristal memiliki sifat unik yang mempercepat pemulihan dunia.

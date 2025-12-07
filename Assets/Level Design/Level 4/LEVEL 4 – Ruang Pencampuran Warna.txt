@@ -1,0 +1,13 @@
+LEVEL 4 – Ruang Pencampuran Warna
+
+Tujuan
+Memperkenalkan konsep pencampuran warna untuk memecahkan puzzle tingkat lanjut.
+
+Tantangan
+Pemain harus mencampurkan warna dasar (merah, biru, kuning) untuk menciptakan warna yang sesuai kebutuhan Chromatic Crystal.
+
+Mekanik
+Pengarahan energi warna, kombinasi warna (merah + biru = ungu, biru + kuning = hijau, dll.), serta kontrol aliran energi agar tidak saling bertabrakan.
+
+Kemenangan
+Kristal warna aktif penuh, melepaskan gelombang cahaya yang memulihkan warna di seluruh ruangan dan menutup portal berikutnya.
