@@ -11,6 +11,8 @@ public class WinManager : MonoBehaviour
         {
             Time.timeScale = 0f;      // Pause game
             winUI.SetActive(true);    // Tampilkan UI Menang
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

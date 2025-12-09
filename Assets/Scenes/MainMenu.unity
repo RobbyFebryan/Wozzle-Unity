@@ -3101,16 +3101,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
       propertyPath: sfxClips.Array.size
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
+      propertyPath: musicClips.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
       propertyPath: 'sfxClips.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: 1a6361f627dd88d4489b84bfbd43a7d0, type: 3}
+      objectReference: {fileID: 8300000, guid: 3bc3be87a24b7ff4ba5c0106df249cfd, type: 3}
     - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
       propertyPath: 'sfxClips.Array.data[2]'
       value: 
       objectReference: {fileID: 8300000, guid: 9354147c56f686b459156f06d15e178d, type: 3}
+    - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
+      propertyPath: 'musicClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a0700de0bfc23ed4392987028bffa26c, type: 3}
+    - target: {fileID: 8582846243256321821, guid: 73f6308ab509ec148833d1ef5837814c, type: 3}
+      propertyPath: 'musicClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9616f998bec19734b9b4811723b7b7fa, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

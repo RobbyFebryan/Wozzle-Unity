@@ -29,6 +29,9 @@ public class PlayerLuring : MonoBehaviour
     [SerializeField] private Vector3 defaultSpawnPosition;
     [SerializeField] private float respawnDelay = 1f;
 
+    [Header("SFX")]
+    [SerializeField] private int sfxIndex = 0; 
+
     private float jumpTimeCounter;
     private bool isGrounded;
     private bool isJumping;
@@ -199,6 +202,8 @@ public class PlayerLuring : MonoBehaviour
             rigidbody3D.linearVelocity = vel;
             isJumping = true;
             jumpTimeCounter = maxJumpTime;
+
+            SoundManager.Instance.PlaySFX(sfxIndex);
         }
 
         jumpPressed = false;

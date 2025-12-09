@@ -31,6 +31,9 @@ public class PlayerLuringJoystick : MonoBehaviour
     [SerializeField] private Vector3 defaultSpawnPosition;
     [SerializeField] private float respawnDelay = 1f;
 
+    [Header("SFX")]
+    [SerializeField] private int sfxIndex = 1; 
+
     private float jumpTimeCounter;
     private bool isGrounded;
     private bool isJumping;
@@ -221,6 +224,8 @@ public class PlayerLuringJoystick : MonoBehaviour
             rigidbody3D.linearVelocity = vel;
             isJumping = true;
             jumpTimeCounter = maxJumpTime;
+
+            SoundManager.Instance.PlaySFX(sfxIndex);
         }
 
         jumpPressed = false;

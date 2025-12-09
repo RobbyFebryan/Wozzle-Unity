@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class SoundManager : MonoBehaviour
     public AudioSource sfxSource;
 
     [Header("Audio Clips")]
-    public AudioClip[] musicClips;
+    public AudioClip[] musicClips;   // index 0 = Main Menu, index 1 = Gameplay
     public AudioClip[] sfxClips;
+
+    private int currentMusicIndex = -1;   // Mencegah musik restart
 
     private void Awake()
     {
@@ -28,71 +31,66 @@ public class SoundManager : MonoBehaviour
 
         Instance = this;
 
-        // FIX: Jadikan root agar DDOL pasti bekerja
         transform.SetParent(null);
-
         DontDestroyOnLoad(gameObject);
-    }
 
+        // === Register event saat scene berganti ===
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     private void Start()
     {
-        // set volume
-        if (PlayerPrefs.HasKey("musicVolume"))
-            SetMusicVolume(PlayerPrefs.GetFloat("musicVolume"));
-        else
-            SetMusicVolume(0.5f);
+        // Load volume settings
+        SetMusicVolume(PlayerPrefs.GetFloat("musicVolume", 0.5f));
+        SetSFXVolume(PlayerPrefs.GetFloat("sfxVolume", 0.5f));
 
-        if (PlayerPrefs.HasKey("sfxVolume"))
-            SetSFXVolume(PlayerPrefs.GetFloat("sfxVolume"));
-        else
-            SetSFXVolume(0.5f);
-
-        // >>> Tambahkan ini <<<
-        if (musicClips.Length > 0)
-            PlayMusic(0);
+        // Mulai musik berdasarkan scene pertama
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
 
-    // --- VOLUME CONTROL ---
-    // Method ini WAJIB ada agar VolumeSettingManager bisa mengatur volume!
-    
+    // === Auto Ganti Musik Berdasarkan Scene ===
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu")
+        {
+            PlayMusic(0); // Musik khusus Main Menu
+        }
+        else
+        {
+            PlayMusic(1); // Musik gameplay / scene lainnya
+        }
+    }
+
+    // === VOLUME ===
     public void SetMusicVolume(float value)
     {
-        // Clamp value between 0 and 1
         value = Mathf.Clamp01(value);
-        
-        // Set volume langsung ke AudioSource
+
         if (musicSource != null)
-        {
             musicSource.volume = value;
-        }
-        
-        // Save to PlayerPrefs
+
         PlayerPrefs.SetFloat("musicVolume", value);
-        PlayerPrefs.Save();
     }
 
     public void SetSFXVolume(float value)
     {
-        // Clamp value between 0 and 1
         value = Mathf.Clamp01(value);
-        
-        // Set volume langsung ke AudioSource
+
         if (sfxSource != null)
-        {
             sfxSource.volume = value;
-        }
-        
-        // Save to PlayerPrefs
+
         PlayerPrefs.SetFloat("sfxVolume", value);
-        PlayerPrefs.Save();
     }
 
-    // --- MUSIC ---
-
+    // === MUSIC ===
     public void PlayMusic(int index)
     {
         if (index < 0 || index >= musicClips.Length) return;
+
+        // Hindari musik restart jika index sama
+        if (index == currentMusicIndex) return;
+
+        currentMusicIndex = index;
 
         musicSource.clip = musicClips[index];
         musicSource.loop = true;
@@ -102,25 +100,20 @@ public class SoundManager : MonoBehaviour
     public void StopMusic()
     {
         if (musicSource != null)
-        {
             musicSource.Stop();
-        }
     }
 
-    // --- SFX ---
-    
+    // === SFX ===
     public void PlaySFX(int index)
     {
         if (index < 0 || index >= sfxClips.Length) return;
 
         sfxSource.PlayOneShot(sfxClips[index]);
     }
-    
+
     public void PlaySFX(AudioClip clip)
     {
-        if (clip != null && sfxSource != null)
-        {
+        if (clip != null)
             sfxSource.PlayOneShot(clip);
-        }
     }
 }
