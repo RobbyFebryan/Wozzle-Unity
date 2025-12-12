@@ -6886,7 +6886,7 @@ Transform:
   m_GameObject: {fileID: 539933125}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 260.53403, y: 26.5, z: 5.8}
+  m_LocalPosition: {x: 260.53403, y: 28.01, z: 5.8}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15107,7 +15107,7 @@ Transform:
   m_GameObject: {fileID: 1206030606}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 256.713, y: 26.5, z: 5.8}
+  m_LocalPosition: {x: 256.713, y: 24.55, z: 5.8}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17592,7 +17592,7 @@ Transform:
   m_GameObject: {fileID: 1519910982}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 254.83, y: 26.5, z: 5.8}
+  m_LocalPosition: {x: 254.83, y: 22.27, z: 5.8}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17956,6 +17956,7 @@ MonoBehaviour:
   lowJumpMultiplier: 1.2
   defaultSpawnPosition: {x: 0, y: 0, z: 0}
   respawnDelay: 1
+  sfxIndex: 0
   IsGrabingActive: 0
   IsActiveRagdoll: 1
 --- !u!114 &1536217786
@@ -17985,6 +17986,7 @@ MonoBehaviour:
   lowJumpMultiplier: 3
   defaultSpawnPosition: {x: 0, y: 0, z: 0}
   respawnDelay: 1
+  sfxIndex: 1
   IsGrabingActive: 0
   IsActiveRagdoll: 1
 --- !u!114 &1536217787
